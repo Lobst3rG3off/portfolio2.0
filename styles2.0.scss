@@ -273,6 +273,14 @@ header h1 {
     top: 2rem; 
     left: 2rem;
 }
+header h2 {
+    background-color: rgba(18,72,120, 0.8);
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 7.5rem; 
+    left: 2rem;
+}
 
 .fixed-header {
     position: fixed;
