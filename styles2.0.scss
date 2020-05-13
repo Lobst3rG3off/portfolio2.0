@@ -328,19 +328,6 @@ nav ul li a {
 }
 
 
-
-.heroImage {
-    z-index: 5;
-    width: 30%;
-    padding-top: 7%;
-
-    img {
-        width: 100%;
-        border-radius: 15%;
-    }
-
-}
-
 i {
     font-size: 2rem;
 }
@@ -417,6 +404,11 @@ section {
 
     }
 
+    .h2Holder {
+            h2 {
+                background-color: rgba(18,72,120, 0.8)
+            };
+    }
 
 
     .imageBox {
@@ -489,7 +481,7 @@ figcaption {
 }
 
 footer {
-    background: goldenrod;
+    background: lightgreen;
     width: 100%;
     display: flex;
     flex-direction: column;
