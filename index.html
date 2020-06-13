@@ -45,10 +45,10 @@
         <nav>
             <div class="site-title">Geoff Grossman</div>
             <ul>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/blog">Blog Posts</a></li>
-                <li><a href="/contact">Contact</a></li>
-            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://medium.com/@lobstergeoff" target="_blank">Blog Posts</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <ul>
         </nav>
     </header>
     <section>
@@ -57,7 +57,7 @@
             <h2>About Me:</h2>
             <p>Hi, I’m Geoff! I’m a Chef turned Web Developer! I've learned modern web programming languages and best
                 practices from
-                HackerYou as a graduate of their Immersive Web Development Bootcamp. </p>
+                Juno College as a graduate of their Immersive Web Development Bootcamp. </p>
             <p>
                 I love and excel working in highly collaborative environments as talking to my computer alone is frowned
                 upon. The
@@ -111,10 +111,10 @@
             </div>
             <a class="button" target='_blank' href="/Geoff Grossman-WebEngineerResume2.1.pdf">Resume</a>
         </div>
-        <div class="projectContainer wrapper">
+        <div class="projectContainer wrapper" id="projects">
             <div class="h2Holder">
-            <h2>Projects:</h2>
-        </div>
+                <h2>Projects:</h2>
+            </div>
             <div class="project1 project">
                 <h3>Movie Suggestifier</h3>
                 <p>A Movie Selector Application</p>
@@ -231,7 +231,7 @@
 
     </section>
     <footer>
-        <div class="contactMe">
+        <div class="contactMe" id="contact">
             <div class="contactWrapper wrapper">
                 <div class="contactInfo">
                     <p>Contact:</p>
@@ -270,16 +270,16 @@
     <script src="https://kit.fontawesome.com/ad6b4a6350.js"></script>
     <script>
 
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= 300) {
-        $('nav').addClass('fixed-header');
-        $('nav div').addClass('visible-title');
-    }
-    else {
-        $('nav').removeClass('fixed-header');
-        $('nav div').removeClass('visible-title');
-    }
-});
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 300) {
+                $('nav').addClass('fixed-header');
+                $('nav div').addClass('visible-title');
+            }
+            else {
+                $('nav').removeClass('fixed-header');
+                $('nav div').removeClass('visible-title');
+            }
+        });
 
     </script>
 </body>
