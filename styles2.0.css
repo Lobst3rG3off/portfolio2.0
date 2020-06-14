@@ -487,6 +487,76 @@ figcaption {
   width: 40%;
 }
 
+.modal-outer {
+  display: -ms-grid;
+  display: grid;
+  background: rgba(255, 213, 0, 0.7);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Hide this modal until we need it */
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal-outer img {
+  width: 100%;
+}
+
+.modal-outer.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-inner {
+  max-width: 600px;
+  min-width: 400px;
+  padding: 2rem;
+  border-radius: 5px;
+  min-height: 200px;
+  background: white;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.modal-outer.open .modal-inner {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+a.button, button, input[type="button"] {
+  color: white;
+  background: #00a8ff;
+  padding: 1rem;
+  border: 0;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+:focus {
+  outline-color: var(--pink);
+}
+
+fieldset {
+  border: 1px solid black;
+}
+
 footer {
   background: lightgreen;
   width: 100%;
