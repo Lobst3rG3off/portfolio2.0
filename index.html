@@ -109,10 +109,11 @@
                     <p>Wordpress</p>
                 </div>
             </div>
-            <a class="button" target='_blank' href="/Geoff Grossman-WebEngineerResume2.1.pdf">Resume</a>
+            <a class="button" target='_blank' href="/Geoff Grossman-WebEngineerResume2.1.pdf" id="projects">Resume</a>
         </div>
-        <div class="projectContainer wrapper" id="projects">
-            <div class="h2Holder">
+        <div class="projectContainer wrapper">
+            <div class="h2Holder" style="background-color: rgba(18,72,120, 0.8);
+            width: 15%;">
                 <h2>Projects:</h2>
             </div>
             <div class="project1 project">
@@ -264,23 +265,15 @@
         </div>
         <div class="copyright">
             <p> Copyright© 2020 Geoff Grossman </p>
-            <p>Photo Credit: Pam Lau</p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/ad6b4a6350.js"></script>
+    <script src="guts.js"></script>
+    <!-- <script>
+
+    </script> -->
     <script>
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() >= 300) {
-                $('nav').addClass('fixed-header');
-                $('nav div').addClass('visible-title');
-            }
-            else {
-                $('nav').removeClass('fixed-header');
-                $('nav div').removeClass('visible-title');
-            }
-        });
-
+       
     </script>
 </body>
 
