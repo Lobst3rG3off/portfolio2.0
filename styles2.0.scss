@@ -508,8 +508,8 @@ figcaption {
   }
 
   .modal-inner {
-    max-width: 600px;
-    min-width: 400px;
+    max-width: 400px;
+    min-width: 200px;
     padding: 2rem;
     border-radius: 5px;
     min-height: 200px;
@@ -531,10 +531,11 @@ figcaption {
     text-decoration: none;
     font-weight: 600;
     font-size:2rem;
+    margin-top: 30px;
   }
   
   :focus {
-    outline-color: var(--pink);
+    outline-color: hsla(75, 100%, 50%, 0.6);
   }
   
   fieldset {
