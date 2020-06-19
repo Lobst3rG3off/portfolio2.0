@@ -423,12 +423,25 @@ section {
     }
 
     .skillIcons {
-        padding: 2% 0;
-        font-size: 2rem;
-        width: 60%;
-        margin-left: 20%;
-        margin-top: 2%;
-        text-align: center;
+        padding: 2% 0px;
+width: 100%;
+display: flex;
+margin-right: 20%;
+justify-content: space-between;
+
+a.button, button, input[type="button"], projectButton {
+    color: white;
+    background: #00a8ff;
+    padding: 1rem;
+    border: 0;
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 30px 5px;
+    justify-content: space-evenly;
+    width: 100%;
+  }
         
 
         i {
@@ -929,4 +942,19 @@ fieldset label:hover::after {
     background-color: #00a8ff;
     -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@media (max-width: 409px) {
+    header h2 {
+        top: 11.5rem;
+        
+      }
+      nav div {
+        font-size: 1.3rem;
+      }
+
+      .project .skillIcons a.button, .project .skillIcons button, .project .skillIcons input[type="button"], .project .skillIcons projectButton {
+        font-size: 0.75rem;
+        
+      }
 }
