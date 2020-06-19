@@ -813,6 +813,9 @@ footer .copyright p {
   h2 {
     font-size: 2.5rem;
   }
+  nav div {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 435px) {
