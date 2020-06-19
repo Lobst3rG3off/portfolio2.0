@@ -57,5 +57,11 @@ window.addEventListener('keydown', e => {
     }
 });
 
+window.addEventListener('touchstart', e => {
+      closeModal();
+});
+
+
+
 
 

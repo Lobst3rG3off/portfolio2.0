@@ -508,15 +508,18 @@ figcaption {
   }
 
   .modal-inner {
-    max-width: 400px;
-    min-width: 200px;
+    max-width: 50%;
+    max-height: 90%;
     padding: 2rem;
     border-radius: 5px;
-    min-height: 200px;
     background: white;
     transform: translateY(-200%);
     transition: transform 2s;
   }
+
+  .modal-outer img {
+    height: 100%;
+    }
 
   .modal-outer.open .modal-inner {
     transform: translateY(0);
@@ -695,6 +698,11 @@ div.skillIcons:nth-child(6) {
     p {
           font-size: 0.85rem;
     }
+    a.button {
+         font-weight: 600;
+        font-size: 1rem;
+        margin: 15% auto;
+      }
 }
 
 footer .contactInfo {
